@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Responsive Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="back.png" alt="Background Image" class="background-image">
+                <img src="marcus.jpg" alt="Your Name" class="profile-picture">
+            </div>
+            <div class="profile-content">
+                <h2>Marcus Lavengco</h2>
+                <p>Web Developer</p>
+                <p></p>
+                <div class="profile-buttons">
+                    <button onclick="showContent('home')">Home</button>
+                    <button onclick="showContent('about')">About Me</button>
+                    <button onclick="showContent('resume')">Resume</button>
+                    <button onclick="showContent('contact')">Contact</button>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="content-container">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
