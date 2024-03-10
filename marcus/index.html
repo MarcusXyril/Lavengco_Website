@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Profile</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <a href="https://github.com/MarcusXyril" class="link">
+        <img src="logo.png" alt="Logo" class="logo">
+      </a>
+    
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#home">Home</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+      <a href="login.php" class="link link--icon" aria-label="logout">
+            <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+        </a>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div id="home" class="about center">
+        <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Hi, I am <span   class="about__name">Marcus Lavengco.</span> <style> </style></h1>
+        <h2 class="about__role">An IT Student.</h2>
+        <p class="about__desc">
+          Welcome to my profile! I'm a web developer, and I invite you to explore my journey and skills. Feel free to navigate through the various sections to learn more about me.
+
+          "FAILURE IS GOOD, LEARN FROM YOUR MISTAKES"
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://docs.google.com/document/d/1yxrkGTY7B7gsk_-vjJylXx8w-qfzzw6IOhaLOwEp5Ws/edit?usp=sharing">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/MarcusXyril"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/marcus-lavengco-827391288/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>i Rev You Enrollment Desk (GUI)</h3>
+            <p class="project__description">
+              The system enables users to select a day and time from the available schedules provided by the irevyou teams. Users can register for a program, choose a suitable schedule, and then follow the study plan offered by the ireview center for exam preparation.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+	
+	 <div class="project">
+            <h3>Project 2</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Boostrap</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Visual Studio Code</li>
+          <li class="skills__list-item btn btn--plain">Pycharm</li>
+          <li class="skills__list-item btn btn--plain">XAMPP</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="marcxyri@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/MarcusXyril"
+        class="link footer__link"
+      >
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
